@@ -5,9 +5,9 @@
 import math
 
 
-def min_operations(n):
+def minOperations(n):
       """
-    Minimum number of operations to reach n H characters.
+    Calculate the minimum number of operations to reach n H characters.
 
     Args:
         n (int): The target number of H characters.
