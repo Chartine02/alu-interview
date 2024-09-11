@@ -1,10 +1,20 @@
 #!/usr/bin/python3
 """Minimum Operations"""
+
+
 import math
 
 
-def minOperations(n):
-    """Minimum Operations"""
+def min_operations(n):
+      """
+    Minimum number of operations to reach n H characters.
+
+    Args:
+        n (int): The target number of H characters.
+
+    Returns:
+        int: The minimum number of operations required.
+    """
     if n <= 1:
         return 0
 
