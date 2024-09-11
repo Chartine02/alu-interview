@@ -4,15 +4,7 @@ import math
 
 
 def minOperations(n):
-      """
-    Calculate the minimum number of operations to reach n H characters.
-
-    Args:
-        n (int): The target number of H characters.
-
-    Returns:
-        int: The minimum number of operations required.
-    """
+    """Minimum Operations"""
     if n <= 1:
         return 0
 
