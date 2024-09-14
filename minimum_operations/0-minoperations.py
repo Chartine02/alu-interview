@@ -1,20 +1,20 @@
 #!/usr/bin/python3
-"""Minimum Operations"""
-import math
+""" defin minOperation"""
 
 
 def minOperations(n):
-    """Minimum Operations"""
-    if n <= 1:
+    """"find the mininum operation """
+
+    if not n or n < 2:
         return 0
+    total_operation = 0
+    divisor = 2
 
-    operations = 0
-    for i in range(2, int(math.sqrt(abs(n))) + 1):
-        while n % i == 0:
-            operations += i
-            n //= i
+    while n > 1:
+        if n % divisor == 0:
+            n //= divisor
+            total_operation += divisor
+        else:
+            divisor = divisor + 1 if divisor == 2 else divisor + 2
 
-    if n > 1:
-        operations += n
-
-    return operations
+    return total_operation
