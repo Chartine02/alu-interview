@@ -18,3 +18,4 @@ def minOperations(n):
             divisor = divisor + 1 if divisor == 2 else divisor + 2
 
     return total_operation
+    
